@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 1rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 5rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 80vh;;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    display: flex;
+  }
+}
+
