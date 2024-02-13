@@ -19,20 +19,45 @@ code {
   margin: 5rem auto;
   border-radius: 5px;
   overflow: hidden;
-  min-height: 80vh;;
+  min-height: 80vh;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.heading {
+  padding-bottom: 0.5rem;
+}
+
+.para {
+  padding-bottom: 1rem;
 }
 
 button {
-  padding: 10px 20px;
+  cursor: pointer;
+  padding: 15px 25px;
   border-radius: 100px;
   border: none;
   background-color: hsl(0, 0%, 95%);
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 960px) {
   .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .para {
+    padding-bottom: 8rem;
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding-bottom: 4rem;
   }
 }
 
